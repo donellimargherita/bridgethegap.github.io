@@ -13,51 +13,83 @@
 	
 	<!--css-->
 	<style>
-		h1 {
+	h1 {
 			padding:2px 60px;
 		}
 		div {
 		  padding: 70px;
 		}
-		nav {
-			background-color:hsla(9, 100%, 64%, 0.2);
+	
+		html {
+			scroll-padding-top: 120px;
+		} 
+
+		#proto_space {
+			background-color:hsla(9, 100%, 64%, 0.1);
+			border: 2px solid LightSlateGray;
+			border-radius: 12px;
+			padding: 30px !important;
+		}
+		
+		#navbar-example2 {
+			background-color: MistyRose !important;
+		}
+		
+		.nav-link {
+			color: black;
+		}
+		
+		footer {
+			font-size: 
+			small;
+			background-color: Gainsboro !important;
 			}
+			
+		header {
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-color: LightPink;
+		}
 	</style>
-	</header>
+	
 
     <title>Bridge The Gap</title>
   </head>
   <body>
 	
-    <header style="background-color:rgba(255, 99, 71, 0.5);">
+    <header>
     <h1>Bridge the Gap</h1>
 
-    <!--Navbar/Scrollspy component from Bootsrap-->
+    <!--Navbar component from Bootsrap-->
 		<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
 			<a class="navbar-brand" href="#"></a>
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link" href="#scrollspyHeading1">What is Bridge the Gap?</a>
+					<a class="nav-link" href="#presentation">What is Bridge the Gap?</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#scrollspyHeading2">Prototype</a>
+					<a class="nav-link" href="#prototype">Prototype</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#scrollspyHeading3">Documentation</a>
+					<a class="nav-link" href="#Documentation">Documentation</a>
 				</li>
 				
 			</ul>
 	</nav>
 	</header>
-	<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-	
-		<h4 id="scrollspyHeading1">What is Bridge the Gap?</h4>
-		<p>Bridge the Gap is a digital humanities project for education. The goal is to fill the gap between educators and cultural heritage institution. The bridge is represented by libraries, that connect teachers and collections managers via reliable and engaging multimedia lectures. </p>
-		<p>The project an output of the Laboratory for DHDK, in the contex of the master degree Digital Humanities and Digital Knowledge at the University of Bologna.
-		The project creator is Margherita Donelli.</p>
-		
-		<h4 id="scrollspyHeading2">Prototype</h4>
+	<div id="content">
+
 		<div class="container">
+		<h4 id="presentation">What is Bridge the Gap?</h4>
+		<p>Bridge the Gap is a digital humanities project for education.</p>
+		<p>The goal is to fill the gap between educators and cultural heritage institution. The bridge is represented by libraries, that connect teachers and collections managers via reliable and engaging multimedia lectures. </p>
+		
+		</div>
+		
+		<div id="proto_space" class="container">
+		<h4 id="prototype">Prototype</h4>
 		  <div class="row justify-content-md-center">
 			<div class="col col-lg-2">
 			  <!--iframe encoding 3d visulisator -->
@@ -92,7 +124,8 @@
 			
 			
 		</p>
-		<h4 id="scrollspyHeading3">Documentation</h4>
+		<div class="container" id="Documentation">
+		<h4>Documentation</h4>
 		<p>
 			<h6>The idea</h6>
 			<p>The project idea starts from a gap. Digital humanities projects are multiplying around the web, are very much useful for the research but the diffusion of them in the school education is at a minimum. It is important to recognize that usually the target of the project is just academic, but at the same time is evident that we are facing a revolution in the schools. The revolution is due to the pandemic that partially changed the modalities of fruition of schools and classrooms during the emergency. But I think that out of the emergency, some changes are here to last.</p> 
@@ -111,14 +144,28 @@
 	
 			<p>With respect to the multimedia objects involved, two main frameworks are used. 
 			
-			<p>The first one is the iiif framework for image sharing (SEE WEBSITE)</p> 
+			<p>The first one is the iiif (International Image Interoperability Framework) framework for image sharing. Is it a community based initiative with the goal of developing applications and technologies to make the most out of all the different cultural heritage digital collections. In this particular project iiif allows to easily embed images or details of manuscripts from different institutions and libraries digital collections in the html page</p> 
 			
-			<p>The second one is dedicated to the visualisation of 3D models. These models are useful when the material heritage in involved and can be generated directly by the institutions for this specific purpose, but there is a number of them that are already available thanks to museums or platforms like…..</p>
+			<p>The second one is dedicated to the visualisation of 3D models. These models are useful when the material heritage is involved and can be generated directly by the institutions for this specific purpose, but there is a number of them that are already available thanks to museums or platforms like Sketchfab or CARARE service by Europeana.</p> 
+			<p>The 3d model is embedded into the html page thanks to the Sketchfab platform that generates code for each publicity available model in the cloud. 
+			It is also possible to directly insert glTF models in html pages through js libraries like three.js (and more advanced coding skills). 
+			</p>
 
 			<h6>Replicability </h6>
-			<p>...</p>
+			<p>The lessons follow a quite simple structure with textual content, the iiif images and a 3d model from Sketchfab platform. In the prototype the multimedia contents are embedded via simple html code lines: the code for the images has been kindly provided by Tiziana Mancinelli and follow the iiif standard and the html praxis, while the code for the 3d model embedding is generated automatically by the sharing platform via iFrame.
+			<p>All the compotents are harmonized and structured in the html page using Bootstrap, that also provides responsive layout and thus adaptability to different media supports.</p><p>In conclusion, the replicability is easily obtained if the html code is perceived as a template to fill with new content for every specific lesson.
+			</p>
 		</p>
 	</div>
+	</div>
+	
+	<footer> 
+	<div class= "container">
+	<p>The project an output of the Laboratory for DHDK, in the contex of the master degree Digital Humanities and Digital Knowledge at the University of Bologna.
+		The project creator is Margherita Donelli.</p>
+	<p>The 3d model is an original creation of Margherita Donelli using 3D Zephir software. The real object is an handmade barrel by Luigi Virdis, from its Private collection.</p>
+	</div>
+</body>
     
 
 	
