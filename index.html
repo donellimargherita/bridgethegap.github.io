@@ -15,35 +15,48 @@
 	<style>
 	h1 {
 			padding:2px 60px;
-		}
-		div {
-		  padding: 70px;
-		}
+	}
 	
-		html {
+	div#content {
+		  padding: 70px;
+	}
+	
+	div#pres_space {
+		padding: 70px;
+	}
+	
+	div#Documentation {
+		padding: 70px;
+	}
+	
+	html {
 			scroll-padding-top: 120px;
-		} 
+	} 
 
-		#proto_space {
+	#proto_space {
 			background-color:hsla(9, 100%, 64%, 0.1);
 			border: 2px solid LightSlateGray;
 			border-radius: 12px;
 			padding: 30px !important;
-		}
+	}
 		
-		#navbar-example2 {
+	#navbar-example2 {
 			background-color: MistyRose !important;
-		}
+	}
 		
 		.nav-link {
 			color: black;
 		}
 		
-		footer {
-			font-size: 
-			small;
+		figcaption {
+			font-size: small;
+		}
+		
+		#footer {
+			font-size: small;
 			background-color: Gainsboro !important;
-			}
+			padding: 50px;
+		}
 			
 		header {
 			position: fixed;
@@ -51,6 +64,10 @@
 			top: 0;
 			left: 0;
 			background-color: LightPink;
+		}
+		
+		a {
+			color: gray;
 		}
 	</style>
 	
@@ -81,52 +98,83 @@
 	</header>
 	<div id="content">
 
-		<div class="container">
-		<h4 id="presentation">What is Bridge the Gap?</h4>
-		<p>Bridge the Gap is a digital humanities project for education.</p>
-		<p>The goal is to fill the gap between educators and cultural heritage institution. The bridge is represented by libraries, that connect teachers and collections managers via reliable and engaging multimedia lectures. </p>
+		<div id="pres_space" class="container">
+			<h4 id="presentation">What is Bridge the Gap?</h4>
+			<p>Bridge the Gap is a digital humanities project for education.</p>
+			<p>The goal is to fill the gap between educators and cultural heritage institution. The bridge is represented by libraries, that connect teachers and collections managers via reliable and engaging multimedia lectures. </p>
 		
 		</div>
 		
 		<div id="proto_space" class="container">
-		<h4 id="prototype">Prototype</h4>
-		  <div class="row justify-content-md-center">
-			<div class="col col-lg-2">
-			  <!--iframe encoding 3d visulisator -->
-			<div class="sketchfab-embed-wrapper"> <iframe title="botte_luigi_virdis" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3db833fc737d4856b5bf56e37e67f189/embed?ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/botte-luigi-virdis-3db833fc737d4856b5bf56e37e67f189?utm_medium=embed&utm_campaign=share-popup&utm_content=3db833fc737d4856b5bf56e37e67f189" target="_blank" style="font-weight: bold; color: #1CAAD9;"> botte_luigi_virdis </a> by <a href="https://sketchfab.com/donellimargherita?utm_medium=embed&utm_campaign=share-popup&utm_content=3db833fc737d4856b5bf56e37e67f189" target="_blank" style="font-weight: bold; color: #1CAAD9;"> donellimargherita </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=3db833fc737d4856b5bf56e37e67f189" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>		
-			</div>
-			<div class="col-md-auto">
-			  Some textual explanation about the 3D model
-			</div>
-			<div class="col col-lg-2">
-			  3 of 3
-			</div>
-		  </div>
-		  <div class="row">
-			<div class="col">
-			  <!--some iiif images embedded -->
-			<section class="section">
-				<div class="container">
-					<img id="img" src="https://gallica.bnf.fr/iiif/ark:/12148/btv1b10532588f/f748/275,153,4397,2525/800/0/default.jpg">
-				</div>
-			</section>
-			</div>
-			<div class="col-md-auto">
-			  Some other long text from the lecture
-			</div>
-			<div class="col col-lg-2">
-			  <p> Some textual content from the lecture </p>
-			</div>
-		  </div>
+			<h4 id="prototype">Prototype</h4>
+				<p id="intro"><i>Lecture about wine making - it is a lecture that should serve as a motivational starting lecture, introducing the broad subject of wine making industry, that is a substantial part of the program for students of Agricultural science school (in Italy “Instituto Agrario”)</i></p>
+				
+				<h5>How people think the wine is made? And how it is actually made?</h5><h6> From Middle Age codices to modern wine industry</h6>
+					<p>The common perception of wine making is very basic, with images including grape cultivation, harvesting as a ceremony and big cask/barrel for the storage.  This imagery comes from Middle Age iconography and representation of the various process involved in wine making. And it should be said this is not a misconception: the wine making techniques formalised during Middle Age have been untouched until the Industrialisation of the second part of the 20th century.</p> <p>In this lecture we will see the different steps of wine making and how these have changed in the model enologic industry, giving and idea of how complex it is now to produce wine and why it should be studied thoroughly.</p>
+				  <div class="row">
+					<div class="col">
+					  <p><i><b> Harvesting</b></i><p>
+					  <p>During Middle Age, the start of the harvesting period was regulated by the community law or ordered by the leader of the community. This measure was adopted to publicly control of operations and  prevent  stealing or early harvesting due to the lack of wine.  Usually, the leader was represented by Church people, like masters of Abbeys, and anyways, the harvesting was considered a feast for the whole community and blessed by the Church: most of the years it was on the same date of Saint Mary’s day, on the 8th of September. This last consideration can explain why most of the illustration from Middle Age codices represent grape harvesting as something ordered from above, as shown in the picture.</p> 
+					</div>
+					<div class="col">
+					 <p>This is obviously different in modern times. The best moment for the harvesting is chosen by the single wine maker. Several factors are to be considered: seasonal pattern, the ideal ripening level for the expected type of wine – red, white or raisin wine (passito). For red wines, the grape should be at its maximum volume, with a pH ranging from 3,2 and 3,3. For white wines, the harvest has to start a bit earlier, when the pH values is 2,9-3,0 ( or 2,8-3,2 for spumante wines). Sweet vines or passito require over-ripen grapes: it will have a higher rate of sugar and will allow to produce a wine with an higher alcoholic content.</p><p>The best way to harvest was and still is hand picking. But it requires a huge work force: if during the Middle age this problem was solved involving the whole community for some days, on the contrary now a days this lead some wine makers to use automatic or semiautomatic systems like shaker-machines.</p>
+					</div>
+					<div class="col">
+						<figure>
+							<img id="img" src="https://gallica.bnf.fr/iiif/ark:/12148/btv1b105072186/f237/full/400/0/native.jpg"> 
+							<figcaption><a href="	https://gallica.bnf.fr/iiif/ark:/12148/btv1b105072186/f237/full/full/0/native.jpg">From NAL 1366 Beatus. — Commentaire sur l'Apocalypse, avec peintures. Ms. de la fin du XII e siècle. Held by Paris. Bibliothèque nationale de France, Département des manuscrits, and sourced via Gallica (Bibliothèque nationale de France)</a></figcaption>
+						</figure>
+					</div>
+				  </div>
+				  
+				  <div class="row">
+					<div class="col">
+						<figure>
+							<img id="img" src="	https://gallica.bnf.fr/iiif/ark:/12148/btv1b105072169/f116/full/400/0/native.jpg">
+							<figcaption><a href="	https://gallica.bnf.fr/iiif/ark:/12148/btv1b105072169/f116/full/full/0/native.jpg">From Latin 9333. IBN BUTLÂN , Tacuinum sanitates. Held by Paris. Bibliothèque nationale de France, Département des manuscrits, and sourced via Gallica (Bibliothèque nationale de France)</a></figcaption>
+						</figure>
+					</div>
+					<div class="col">
+						<p><i><b>Grape processing</b></i><p>
+						<p>The subsequent operation is the pressing (pigiatura). The common imagery is the one representing people inside big wooden wine tanks walking on the grapes in order to press the fruits and extract the juice directly on the field. Once again, this is derived from the ancient wine making process and the middle age codices helped building this iconography. </p><p>In modern times the grapes are transported from the field to the wine cellar and only there are processed.</p> 
+						<p><li>Here, there are dedicated rooms for every stage of the process:
+					  <ul>
+						<li>The mash tun room. Here – and not on the fields anymore – the grapes are pressed .</li> 
+						<li>The fermentation room. Where the wine tanks are stored to rest and allow the fermentation.</li>
+						<li>The maturation room. The storage for barrels filled with wine. It is important that this room should not be isolated, but should be able to perceive the different climates due to seasons since this changes are crucial for the wine maturation.</li> 
+						<li>The wine cellar (itself). Usually it is placed underneath the floor level because it should be isolated by thermic swings.</li>
+						</ul></li></p> 
+					</div>
+					<div class="col">
+						<p>The last two rooms existed in the wineries of the Middle ages as well. The maturation rooms full of barrels was usually placed not in a dedicated winery, but in the context of a farm or better in the large building of the city administration or in the cellars of the castles.</p><p>
+						These rooms are ( and were before) the house of all the different containers used in the winery, called “ vats “ or simply wine containers. <li>The principal categories of vats are:
+							<ul>
+							<li>The wine tanks, used for the first fermentation. Usually are open in the upper side</li>
+							<li>The barrels or casks are used for processing and maturation of wine. They are characterised by a  rounded , oval or elliptic section; an upper hole for checking the level of the wine and a lower aperture for cleaning between a harvest and the other. The building material are wooden stripes. The capacity can vary with the desired use but it usually is greater than 2 hL.<p><i>The 3d model can help us understand better how the barrel is made, also from the inside. This particular barrel is a toy example of little dimensions, handmade in Sardinia. </i></p></li></ul></li></p>
+					</div>
+					
+				  </div>
+				
+				
+
+					<!--iframe encoding 3d visulisator -->
+					<div class="container">
+						<div class="row">
+							<div class="column-md-auto" class="sketchfab-embed-wrapper"> <iframe title="botte_luigi_virdis" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/3db833fc737d4856b5bf56e37e67f189/embed?autospin=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/botte-luigi-virdis-3db833fc737d4856b5bf56e37e67f189?utm_medium=embed&utm_campaign=share-popup&utm_content=3db833fc737d4856b5bf56e37e67f189" target="_blank" style="font-weight: bold; color: #1CAAD9;"> botte_luigi_virdis </a> by <a href="https://sketchfab.com/donellimargherita?utm_medium=embed&utm_campaign=share-popup&utm_content=3db833fc737d4856b5bf56e37e67f189" target="_blank" style="font-weight: bold; color: #1CAAD9;"> donellimargherita </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=3db833fc737d4856b5bf56e37e67f189" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+							<div class="col-md-auto">
+								<figure>
+								<img id="img" src="	https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036422w/f99/full/400/0/native.jpg"> <a href="https://gallica.bnf.fr/iiif/ark:/12148/btv1b10036422w/f99/full/full/0/native.jpg"><figcaption>From Italien 1108 . Giovanni Cademosto de Lodi, Libro de componere herbe et frutti. (1471) Held by Paris. Bibliothèque nationale de France, Département des manuscrits, and sourced via Gallica (Bibliothèque nationale de France)</a></figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+			
+			  
 		</div>
 			
-			
-			
-			
-		</p>
 		<div class="container" id="Documentation">
-		<h4>Documentation</h4>
-		<p>
+			<h4>Documentation</h4>
+				<p>
 			<h6>The idea</h6>
 			<p>The project idea starts from a gap. Digital humanities projects are multiplying around the web, are very much useful for the research but the diffusion of them in the school education is at a minimum. It is important to recognize that usually the target of the project is just academic, but at the same time is evident that we are facing a revolution in the schools. The revolution is due to the pandemic that partially changed the modalities of fruition of schools and classrooms during the emergency. But I think that out of the emergency, some changes are here to last.</p> 
 			<p>The multimedia objects have entered the classroom and have been discovered by educators as a powerful tool.</p> 
@@ -155,16 +203,16 @@
 			<p>The lessons follow a quite simple structure with textual content, the iiif images and a 3d model from Sketchfab platform. In the prototype the multimedia contents are embedded via simple html code lines: the code for the images has been kindly provided by Tiziana Mancinelli and follow the iiif standard and the html praxis, while the code for the 3d model embedding is generated automatically by the sharing platform via iFrame.
 			<p>All the compotents are harmonized and structured in the html page using Bootstrap, that also provides responsive layout and thus adaptability to different media supports.</p><p>In conclusion, the replicability is easily obtained if the html code is perceived as a template to fill with new content for every specific lesson.
 			</p>
-		</p>
-	</div>
+		</div>
 	</div>
 	
-	<footer> 
-	<div class= "container">
-	<p>The project an output of the Laboratory for DHDK, in the contex of the master degree Digital Humanities and Digital Knowledge at the University of Bologna.
-		The project creator is Margherita Donelli.</p>
-	<p>The 3d model is an original creation of Margherita Donelli using 3D Zephir software. The real object is an handmade barrel by Luigi Virdis, from its Private collection.</p>
+	<div id="footer"> 
+		<div class= "container">
+			<p>The project an output of the Laboratory for DHDK, in the contex of the master degree Digital Humanities and Digital Knowledge at the University of Bologna.
+			The project creator is Margherita Donelli.</p>
+			<p>The 3d model is an original creation of Margherita Donelli using 3D Zephir software. The real object is an handmade barrel by Luigi Virdis, from its Private collection.</p>
 	</div>
+
 </body>
     
 
